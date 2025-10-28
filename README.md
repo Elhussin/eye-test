@@ -49,13 +49,14 @@ This app uses the optical validators package:
 ## 📸 Screenshots
 
 ### 🖥️ Desktop View
-<img src="https://raw.githubusercontent.com/Elhussin/eye-test/main/public/1.png" width="700" />
+
+<img src="https://raw.githubusercontent.com/Elhussin/eye-test/main/public/2.png" width="700" />
 
 ### 📱 Mobile View
 <img src="https://raw.githubusercontent.com/Elhussin/eye-test/main/public/3.png" width="300" />
 
 ### 📄 Print View
-<img src="https://raw.githubusercontent.com/Elhussin/eye-test/main/public/2.png" width="700" />
+<img src="https://raw.githubusercontent.com/Elhussin/eye-test/main/public/1.png" width="700" />
 
 ---
 
