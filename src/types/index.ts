@@ -53,6 +53,6 @@ export interface OtherFailedProps{
    register:any;
    // customers:Record<string,any>[];
    // setShowModal:(value:boolean)=>void;
-   // errors:any;
+   errors:any;
    isView?:boolean;
  }

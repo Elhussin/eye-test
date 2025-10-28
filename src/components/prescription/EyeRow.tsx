@@ -1,6 +1,6 @@
-import type { EyeRowProps } from "../types";
-import { errorInputClass,normalInputClass } from "../types";
-import { handleEyeTestFormat } from "../utils/handleEyeTestFormat";
+import type { EyeRowProps } from "../../types";
+import { errorInputClass,normalInputClass } from "../../types";
+import { handleEyeTestFormat } from "../../utils/handleEyeTestFormat";
 const EyeRow: React.FC<EyeRowProps> = (props) => {
   const { side, register, isView, fieldErrors,setFieldErrors,setValue,getValues } = props;
   const prefix = side === "right" ? "R" : "L";

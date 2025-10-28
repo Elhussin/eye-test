@@ -1,6 +1,6 @@
-import { errorInputClass, normalInputClass } from "../types";
-import type { EyeRowProps } from "../types";
-import { handleEyeTestFormat } from "../utils/handleEyeTestFormat";
+import { errorInputClass, normalInputClass } from "../../types";
+import type { EyeRowProps } from "../../types";
+import { handleEyeTestFormat } from "../../utils/handleEyeTestFormat";
 
 const EyeExtraRow: React.FC<EyeRowProps> = (props) => {
 

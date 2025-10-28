@@ -18,6 +18,15 @@ type Props = {
   rightToric: LensData;
 };
 
+// SPH	-2.00
+// CY	+0.00
+// ADD	+0.00
+// AX	0
+// Exact SPH	-1.95
+// Exact CY	+0.00
+// BV
+const keysStyle=["SPH","CY","ADD","AX"]
+// "Exact SPH","Exact CY","BV"
 const ContactLensViewer: React.FC<Props> = ({
   rightSphere,
   leftSphere,
@@ -27,14 +36,15 @@ const ContactLensViewer: React.FC<Props> = ({
   const renderSection = (title: string, data: LensData) => (
     <>
 
+
       <div className="border rounded-lg shadow-sm p-4 mb-4">
         <h3 className="font-semibold text-lg mb-2">{title}</h3>
         <table className="table-auto w-full text-sm">
           <tbody>
             {Object.entries(data).map(([key, value]) => (
               <tr key={key} className="border-b last:border-0">
-                <td className="font-medium pr-3">{key}</td>
-                <td>{value}</td>
+                <td className="font-medium pr-3 bold">{key}</td>
+                <td className={keysStyle.includes(key)?"font-bold text-red-500":"text-gray-500"}>{value}</td>
               </tr>
             ))}
           </tbody>

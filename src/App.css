@@ -6,68 +6,102 @@
   --font-main: "Inter", sans-serif;
   --font-alt: "Cairo", sans-serif;
 
-  --color-body: #f9fafb;              /* Light gray background */
-  --color-surface: #ffffff;           /* Card/Surface Header  */
-  --color-elevated: #f1f5f9;          /* Elevated cards or nav Footer */
+  --color-body: #f9fafb;
+  /* Light gray background */
+  --color-surface: #ffffff;
+  /* Card/Surface Header  */
+  --color-elevated: #f1f5f9;
+  /* Elevated cards or nav Footer */
 
-  --color-main: #0f172a;              /* Main dark text */
-  --color-secondary: #475569;         /* Sub text */
-  --color-primary: #4771cc;           /* Main CTA (blue-600) */
-  --color-header:#123a6a;
-  --color-border-main: #ced1d4;       /* Border gray Aside*/
+  --color-main: #0f172a;
+  /* Main dark text */
+  --color-secondary: #475569;
+  /* Sub text */
+  --color-primary: #4771cc;
+  /* Main CTA (blue-600) */
+  --color-header: #123a6a;
+  --color-border-main: #ced1d4;
+  /* Border gray Aside*/
 
-  --color-button-bg: #2563eb;         /* Primary button */
+  --color-button-bg: #2563eb;
+  /* Primary button */
   --color-button-text: #ffffff;
-  --color-button-hover-bg: #1d4ed8;   /* Hover blue-700 */
+  --color-button-hover-bg: #1d4ed8;
+  /* Hover blue-700 */
   --color-button-border-radius: 0.5rem;
 
-  --color-danger: #dc2626;            /* Red-600 */
-  --color-success: #16a34a;           /* Green-600 */
-  --color-info: #0ea5e9;              /* Sky-500 */
+  --color-danger: #dc2626;
+  /* Red-600 */
+  --color-success: #16a34a;
+  /* Green-600 */
+  --color-info: #0ea5e9;
+  /* Sky-500 */
 
 }
 
 @variant dark {
-  --color-body: #0f172a;              /* Very dark background */
-  --color-surface: #1e293b;           /* Cards Header Footer nav */ 
-  --color-elevated: #334155;          /* Elevated elements Aside*/
+  --color-body: #0f172a;
+  /* Very dark background */
+  --color-surface: #1e293b;
+  /* Cards Header Footer nav */
+  --color-elevated: #334155;
+  /* Elevated elements Aside*/
 
-  --color-main: #f8fafc;              /* Light text  */
-  --color-secondary: #94a3b8;         /* Muted text */
-  --color-primary: #3b82f6;           /* Blue-500 for CTA */
-  --color-header:#0542747a;
+  --color-main: #f8fafc;
+  /* Light text  */
+  --color-secondary: #94a3b8;
+  /* Muted text */
+  --color-primary: #3b82f6;
+  /* Blue-500 for CTA */
+  --color-header: #0542747a;
   --color-border-main: #475569;
 
-  --color-button-bg: #3b82f6;         /* Blue-500 */
+  --color-button-bg: #3b82f6;
+  /* Blue-500 */
   --color-button-text: #f1f5f9;
-  --color-button-hover-bg: #2563eb;   /* Blue-600 */
+  --color-button-hover-bg: #2563eb;
+  /* Blue-600 */
 
   /* --color-danger: #f87171;            Light red */
-  --color-success: #4ade80;           /* Light green */
-  --color-info: #38bdf8;              /* Light sky */
+  --color-success: #4ade80;
+  /* Light green */
+  --color-info: #38bdf8;
+  /* Light sky */
 }
-.color{
+
+.color {
   --font-main: "Inter", sans-serif;
   --font-alt: "Cairo", sans-serif;
 
-  --color-body: #f9fafb;              /* Light gray background */
-  --color-surface: #ffffff;           /* Card/Surface Header  */
-  --color-elevated: #f1f5f9;          /* Elevated cards or nav Footer */
+  --color-body: #f9fafb;
+  /* Light gray background */
+  --color-surface: #ffffff;
+  /* Card/Surface Header  */
+  --color-elevated: #f1f5f9;
+  /* Elevated cards or nav Footer */
 
-  --color-main: #0f172a;              /* Main dark text */
-  --color-secondary: #475569;         /* Sub text */
-  --color-primary: #0542747a;           /* Main CTA (blue-600) */
+  --color-main: #0f172a;
+  /* Main dark text */
+  --color-secondary: #475569;
+  /* Sub text */
+  --color-primary: #0542747a;
+  /* Main CTA (blue-600) */
 
-  --color-border-main: #ced1d4;       /* Border gray Aside*/
+  --color-border-main: #ced1d4;
+  /* Border gray Aside*/
 
-  --color-button-bg: #2563eb;         /* Primary button */
+  --color-button-bg: #2563eb;
+  /* Primary button */
   --color-button-text: #ffffff;
-  --color-button-hover-bg: #1d4ed8;   /* Hover blue-700 */
+  --color-button-hover-bg: #1d4ed8;
+  /* Hover blue-700 */
   --color-button-border-radius: 0.5rem;
 
-  --color-danger: #dc2626;            /* Red-600 */
-  --color-success: #16a34a;           /* Green-600 */
-  --color-info: #0ea5e9;   
+  --color-danger: #dc2626;
+  /* Red-600 */
+  --color-success: #16a34a;
+  /* Green-600 */
+  --color-info: #0ea5e9;
 }
 
 @layer main {
@@ -83,33 +117,56 @@
     font-family: var(--font-main);
   }
 
-body {
-  @apply  bg-body text-main min-h-screen m-0 p-0 w-full;
-}
+  body {
+    @apply bg-body text-main min-h-screen m-0 p-0 w-full;
+  }
+
+  html {
+    @apply text-base md:text-lg;
+  }
+
+  h1 {
+    @apply text-2xl md:text-3xl font-bold;
+  }
+
+  h2 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+
+  p,
+  label,
+  input,
+  button {
+    @apply text-sm md:text-base;
+  }
 
 
   .header {
-    @apply w-full bg-header dark:bg-body  flex items-center justify-between pl-2 pr-2 p-1 text-button-text;
+    @apply w-full bg-header dark:bg-body flex items-center justify-between pl-2 pr-2 p-1 text-button-text;
   }
-  .header-select{
+
+  .header-select {
     @apply p-2 rounded bg-header dark:bg-body hover:bg-elevated hover:text-primary transition-colors duration-200;
   }
 
   .nav {
-    @apply w-full  shadow-md px-4 py-2 flex items-center justify-between text-primary bg-elevated border-b border-primary;
+    @apply w-full shadow-md px-4 py-2 flex items-center justify-between text-primary bg-elevated border-b border-primary;
   }
+
   .nav-link {
-    @apply p-2 text-main transition-colors duration-200  hover:bg-elevated hover:text-primary  ;
+    @apply p-2 text-main transition-colors duration-200 hover:bg-elevated hover:text-primary;
   }
+
   .footer {
-    @apply bg-elevated shadow-md dark:bg-surface  py-10 px-4 md:px-10  mt-10;
+    @apply bg-elevated shadow-md dark:bg-surface py-10 px-4 md:px-10 mt-10;
   }
+
   .footer-content {
-    @apply mx-auto px-4 text-center text-sm ;
+    @apply mx-auto px-4 text-center text-sm;
   }
 
   .main {
-    @apply p-4 lg:w-3/4  w-full  space-y-4 mx-auto
+    @apply p-4 lg:w-3/4 w-full space-y-4 mx-auto
   }
 
   .hr {
@@ -120,50 +177,60 @@ body {
 
 @layer buttons {
   .aside-button {
-    @apply  p-2 text-main rounded-full 
+    @apply p-2 text-main rounded-full transition-all duration-200;
+  }
 
-    transition-all duration-200;
-  }
   .btn {
-    @apply flex items-center gap-2 font-medium px-4 py-2 rounded-md transition-all text-sm  hover:opacity-70;
+    @apply flex items-center gap-2 font-medium px-4 py-2 rounded-md transition-all text-sm hover:opacity-70;
   }
+
   .btn-close {
     @apply absolute top-3 right-3 text-gray-500 hover:text-red-600 text-2xl font-bold;
   }
+
   .btn-primary {
     @apply bg-primary;
   }
+
   .btn-secondary {
     @apply bg-secondary;
   }
+
   .btn-danger {
     @apply bg-danger text-button-text;
   }
+
   .btn-success {
     @apply bg-success;
   }
+
   .btn-info {
     @apply bg-info;
   }
+
   .btn-cancel {
     @apply bg-gray-400;
   }
+
   .btn-reset {
     @apply bg-gray-500;
   }
+
   .btn-warning {
     @apply bg-yellow-500 text-button-text;
   }
 }
 
 @layer input {
-  .input-error{
-    @apply w-full px-3 py-2   rounded-md focus:outline-none   ;
+  .input-error {
+    @apply w-full px-3 py-2 rounded-md focus:outline-none;
 
   }
+
   .input-text {
-    @apply w-full px-3 py-2 border border-border-main  rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+    @apply w-full px-3 py-2 border border-border-main rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
   }
+
   .input-disabled {
     @apply bg-gray-200 text-gray-500 cursor-not-allowed;
   }
@@ -173,8 +240,7 @@ body {
   }
 
   .select {
-    @apply w-full px-3 py-2 border border-gray-300 rounded-md 
-           focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
   }
 
   .option {
@@ -182,39 +248,42 @@ body {
   }
 
   /* globals.css أو select.css */
-.select__control {
-  @apply w-full px-3 py-2 border border-gray-300 rounded-md 
-         focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
-}
+  .select__control {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
 
-.select__option {
-  @apply cursor-pointer hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-white;
-}
+  .select__option {
+    @apply cursor-pointer hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-white;
+  }
 
 }
 
 @layer card {
-  .main-container{
-    @apply flex flex-col md:flex-row gap-4 w-full ;
+  .main-container {
+    @apply flex flex-col md:flex-row gap-4 w-full;
   }
 
   .container-h {
-    @apply max-w-screen-md px-4 ml-2 md:ml-2 ;
+    @apply max-w-screen-md px-4 ml-2 md:ml-2;
   }
 
-  .head{
+  .head {
     @apply flex flex-wrap justify-between items-center p-4;
   }
-  .card-continear{
+
+  .card-continear {
     @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4;
   }
+
   .card {
     @apply p-6 shadow-md rounded-lg bg-elevated border border-border-main;
   }
-  .card-body{
+
+  .card-body {
     @apply w-full text-secondary
   }
-  .btn-card{
+
+  .btn-card {
     @apply flex flex-row gap-2 text-sm mt-4;
   }
 
@@ -224,12 +293,15 @@ body {
   .error-text {
     @apply text-danger text-sm mt-1;
   }
-  .title{
+
+  .title {
     @apply text-xl font-bold text-primary capitalize;
   }
+
   .title-1 {
     @apply text-lg font-bold capitalize text-main mb-2;
   }
+
   .label {
     @apply block mb-1 text-sm font-medium text-main;
 
@@ -278,29 +350,6 @@ body {
   }
 }
 
-@layer Print {
-  @media print {
-    body * {
-      visibility: hidden;
-    }
-    .print,
-    .print * {
-      visibility: visible;
-
-    }
-    .print {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-    }
-    .btn-card {
-      visibility: hidden;
-    }
-  }
-}
-/*  */
-
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -337,42 +386,6 @@ body {
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-
-}
-
-:root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
 
 }
 
@@ -416,9 +429,57 @@ body {
     @apply border-border outline-ring/50;
 
   }
+
   body {
     @apply bg-background text-foreground;
 
   }
 
+}
+
+
+
+@media print {
+  html, body {
+    font-size: 14px;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  body * {
+    visibility: hidden !important;
+    overflow: visible !important;
+  }
+
+  .btn-card,
+  .nan-print {
+    display: none !important;
+  }
+
+  .print,
+  .print * {
+    visibility: visible !important;
+  }
+
+ .print {
+  visibility: visible !important;
+    position: static !important;
+    width: 100%;
+  }
+
+  #sizer {
+    /* display: none !important;
+     */
+     height: 1000px !important;
+  } 
+
+  @page {
+    size: A4;
+    margin: 0,10;
+
+  }
+
+  main {
+    margin-top: 0px;
+  }
 }
