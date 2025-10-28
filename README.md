@@ -1,73 +1,110 @@
-# React + TypeScript + Vite
+# 👓 Eye Test Validator & Contact Lens Converter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive React application for validating and converting optical prescriptions (Eyeglasses & Contact Lenses).  
+Built with **React + TypeScript + TailwindCSS**, and powered by the backend logic from  
+📦 **eye-test-utils** npm package.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌍 Live Demo
 
-## React Compiler
+🚀 Try it here:  
+👉 https://elhussin.github.io/eye-test/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+✅ Validate optical prescriptions (SPH / CYL / AXIS / ADD / PD)  
+✅ Automatic formatting into standard optical notation  
+✅ Lens transposition (positive → negative cylinder format)  
+✅ Contact lens power conversion with Vertex Distance adjustment  
+✅ Responsive UI — works great on mobile & print  
+✅ One-page printable output (A4 optimized)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧠 Powered By
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+This app uses the optical validators package:
+
+📦 NPM: `eye-test-utils`  
+🔗 https://www.npmjs.com/package/eye-test-utils  
+🔗 Repository: https://github.com/Elhussin/eye-test-utils
+
+---
+
+## 🖥️ Tech Stack
+
+| Layer | Technology |
+|------|-------------|
+| Frontend | React (TypeScript) |
+| Styling | TailwindCSS |
+| Notifications | Sonner |
+| Build System | Vite |
+| Deployment | GitHub Pages |
+
+---
+
+## 📸 Screenshots
+
+### 🖥️ Desktop View
+<img src="https://raw.githubusercontent.com/Elhussin/eye-test/main/public/1.png" width="700" />
+
+### 📱 Mobile View
+<img src="https://raw.githubusercontent.com/Elhussin/eye-test/main/public/3.png" width="300" />
+
+### 📄 Print View
+<img src="https://raw.githubusercontent.com/Elhussin/eye-test/main/public/2.png" width="700" />
+
+---
+
+## 🛠️ Development Setup
+
+Clone the repo:
+
+```bash
+git clone https://github.com/Elhussin/eye-test
+cd eye-test
+```
+### Install dependencies:
+```bash
+npm install
+# or
+bun install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Run development server:
+```bash
+npm run dev
+# or
+bun run dev
 ```
+### Build for production:
+```bash
+npm run build
+# or
+bun run build
+```
+### Deploy to GitHub Pages:
+```bash
+npm run deploy
+# or
+bun run deploy
+```
+
+## Print-Ready View
+When switching to View Mode, the UI becomes optimized for printing.
+✅ Hidden buttons in print
+✅ Fits into a single A4 page when possible
+
+## 💬 Support & Contact
+
+If you have any questions, need technical support, or want to discuss features, feel free to reach out:
+
+* **Email:** [hasin3112@gmail.com](mailto:hasin3112@gmail.com)
+* **GitHub Issues:** [Open an Issue here](https://github.com/Elhussin/eye-test/issues) 
+(The preferred way to report bugs)
+
+## 📜 License
+This project is licensed under the **MIT License**.
