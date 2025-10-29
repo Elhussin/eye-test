@@ -1,7 +1,7 @@
 
 const EyeTestLabel = () => {
 return (
-<div className="grid grid-cols-[80px_repeat(4,1fr)] gap-2">
+<div className="grid grid-cols-[25px_repeat(4,1fr)] gap-2">
 <label title=""></label>
 <label title="Spherical">SPH</label>
 <label title="Cylinder">CYL</label>
@@ -13,7 +13,7 @@ return (
 
 const EyeTestLabelProps = () => {
  return (
-    <div className="grid grid-cols-[80px_repeat(4,1fr)] md:grid-cols-5 gap-2">
+    <div className="grid grid-cols-[25px_repeat(4,1fr)] md:grid-cols-5 gap-2">
     <label title="" className="block md:hidden"></label>
     <label title="Pupillary Distance">PD</label>
     <label title="Segment Height">SG</label>

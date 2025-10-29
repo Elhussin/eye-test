@@ -5,7 +5,7 @@ const EyeRow: React.FC<EyeRowProps> = (props) => {
   const { side, register, isView, fieldErrors,setFieldErrors,setValue,getValues } = props;
   const prefix = side === "right" ? "R" : "L";
   return (
-    <div className="grid grid-cols-[80px_repeat(4,1fr)] gap-2">
+    <div className="grid grid-cols-[25px_repeat(4,1fr)] gap-2">
       <div className="flex items-center">
         <h3 className="text-lg font-semibold">{prefix}</h3>
       </div>

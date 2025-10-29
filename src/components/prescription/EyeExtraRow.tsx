@@ -6,7 +6,7 @@ const EyeExtraRow: React.FC<EyeRowProps> = (props) => {
 
   const { side, register, isView, fieldErrors,setFieldErrors,setValue,getValues }=props
   return (
-    <div className="grid grid-cols-[80px_repeat(4,1fr)] md:grid-cols-5 gap-2">
+    <div className="grid grid-cols-[25px_repeat(4,1fr)] md:grid-cols-5 gap-2">
       <div className="flex items-center md:hidden">
         <h3 className="text-lg font-semibold">{side === "right" ? "R" : "L"}</h3>
       </div>
