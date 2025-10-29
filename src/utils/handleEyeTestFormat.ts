@@ -34,8 +34,7 @@ export const handleEyeTestFormat = (props:HandleEyeTestFormatProps) => {
     }
     const num = Number(value);
     const validatorKey = Object.keys(validatorMap).find((k) => field.includes(k));
-     console.log(validatorKey,num);
-  
+
     if (!validatorKey) return;
   
     const formatted = validatorMap[validatorKey](num);
