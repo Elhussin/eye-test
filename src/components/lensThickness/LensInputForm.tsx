@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { Eye, Glasses, CircleOff } from "lucide-react";
 import { categorizedMaterials } from '../../constants/data'
 export default function LensInputForm({
@@ -123,7 +122,7 @@ export default function LensInputForm({
           {/* Eye Test */} 
           <div className="grid grid-cols-3 gap-4">
             {[
-              { label: "SPH", value: spherePower, set: setSpherePower, step: 0.25, min: -60, max: 60 },
+              { label: "SPH", value: spherePower, set: setSpherePower, step: 0.25, min: -60, max: 60 , },
               { label: "CYL", value: cylinderPower, set: setCylinderPower, step: 0.25, min: -15, max: 15 },
               { label: "AX", value: cylinderAxis, set: setCylinderAxis, step: 1, min: 0, max: 180 },
             ].map((item) => (
@@ -132,10 +131,13 @@ export default function LensInputForm({
                 <input
                   type="number"
                   value={item.value}
-                  onChange={(e) => item.set(parseFloat(e.target.value))}
+                  // onChange={(e) => item.set(parseFloat(e.target.value))}
+                    onChange={(e) => item.set(e.target.value)}
+
                   step={item.step}
                   min={item.min}
                   max={item.max}
+                  title ={`Plase Enter ${item.label} between ${item.min} and ${item.max}`}
                   className="input-text"
                 />
               </div>

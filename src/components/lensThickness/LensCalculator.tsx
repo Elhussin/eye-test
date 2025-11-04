@@ -6,9 +6,9 @@ import { Header } from "./Header"
 export default function LensCalculator() {
   const [baseCurveMode, setBaseCurveMode] = useState("automatic");
   const [baseCurve, setBaseCurve] = useState(6);
-  const [spherePower, setSpherePower] = useState(5);
-  const [cylinderPower, setCylinderPower] = useState(1);
-  const [cylinderAxis, setCylinderAxis] = useState(90);
+  const [spherePower, setSpherePower] = useState(-5);
+  const [cylinderPower, setCylinderPower] = useState(-1);
+  const [cylinderAxis, setCylinderAxis] = useState(180);
   const [ipd, setIpd] = useState(62);
   const [frameEyesize, setFrameEyesize] = useState(54);
   const [frameBridge, setFrameBridge] = useState(18);
@@ -23,6 +23,7 @@ export default function LensCalculator() {
     frameEyesize,
     frameBridge,
     lensMaterial,
+    cylinderAxis
   });
 
   return (

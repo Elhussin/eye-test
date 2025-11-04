@@ -10,19 +10,19 @@ export default function LensVisualizer({ results, lensMaterial }: LensVisualizer
   const effectivePower = parseFloat(results.effectivePower);
   const centerThick = parseFloat(results.center);
   const edgeThick = parseFloat(results.edge);
-  const diameter = parseFloat(results.effectiveDiameter);
+  // const diameter = parseFloat(results.effectiveDiameter);
 
-  // إعداد المقاييس
-  const scale = 2.5; // عرض العدسة بالبكسل لكل مم
+  // // إعداد المقاييس
+  // const scale = 2.5; // عرض العدسة بالبكسل لكل مم
   const thicknessScale = 8; // مقياس السمك
-  const lensWidth = diameter * scale;
-  const centerX = 160;
-  const centerY = 110;
-  const halfWidth = lensWidth / 2;
+  // const lensWidth = diameter * scale;
+  // const centerX = 160;
+  // const centerY = 110;
+  // const halfWidth = lensWidth / 2;
 
-  // إعداد الظلال والانعكاسات
-  const gradientId = "lensGrad";
-  const reflectionId = "lensReflection";
+  // // إعداد الظلال والانعكاسات
+  // const gradientId = "lensGrad";
+  // const reflectionId = "lensReflection";
 
   // نوع العدسة
   const isMinus = effectivePower < -0.25;
@@ -79,7 +79,7 @@ export default function LensVisualizer({ results, lensMaterial }: LensVisualizer
         </div>
 
         {/* معلومات المادة */}
-        <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border-2 border-green-200">
+        <div className="bg-linear-to-r from-green-50 to-emerald-50 rounded-xl p-6 border-2 border-green-200">
           <h3 className="text-lg font-bold text-gray-800 mb-3">معلومات المادة والحسابات</h3>
           <div className="grid grid-cols-2 gap-3 text-sm text-gray-700">
             <div>

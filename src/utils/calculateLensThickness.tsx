@@ -1,5 +1,5 @@
 import {materials} from '../constants/data'
-
+import { EyeTestValidator } from "eye-test-utils";
 /**
  * حساب سماكة العدسات مع Cylinder وAxis
  * @param {Object} params - بيانات العدسة
@@ -15,7 +15,7 @@ import {materials} from '../constants/data'
  * @returns {Object} النتائج المحسوبة
  */
 export function calculateLensThickness(params: any) {
-  const {
+  let {
     spherePower,
     cylinderPower,
     ipd,
@@ -23,8 +23,24 @@ export function calculateLensThickness(params: any) {
     frameBridge,
     lensMaterial,
     baseCurveMode,
+    cylinderAxis,
     baseCurve = 6.0,
   } = params;
+  spherePower = parseFloat(spherePower) || 0;
+  cylinderPower = parseFloat(cylinderPower) || 0;
+  cylinderAxis = parseFloat(cylinderAxis) || 0;
+
+  const  validator = new EyeTestValidator();
+  const validAxisNum= validator.validateAxis(cylinderAxis)
+  const ValidCylinderNum= validator.validateCYL(cylinderPower)
+  const validSphereNum= validator.validateSPH(spherePower)
+  console.log(validAxisNum,ValidCylinderNum,validSphereNum)
+  if (!ValidCylinderNum || !validSphereNum) {
+    return
+  }
+
+  // console.log(res)
+
 
 
   const material = materials[lensMaterial];
