@@ -1,13 +1,10 @@
+import { createRoot } from "react-dom/client";
+import { HashRouter } from "react-router-dom";
+import App from "./App";
+import "./App.css";
 
-import { createRoot } from 'react-dom/client'
-import './App.css'
-import MainLayout from './components/layaout/MainLayout';
-
-  import { HashRouter } from "react-router-dom";
-createRoot(document.getElementById('root')!).render(
-
-<HashRouter>
-   <MainLayout/>
-</HashRouter>
-
-)
+createRoot(document.getElementById("root")!).render(
+  <HashRouter>
+    <App />
+  </HashRouter>
+);

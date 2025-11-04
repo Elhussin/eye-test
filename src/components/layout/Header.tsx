@@ -1,5 +1,7 @@
+import  Nav  from "./Nav";
 export default function Header() {
   return (
+    <>
     <header className="header" dir="ltr">
       <div className="w-full flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
       <div className="flex items-center justify-center sm:justify-start gap-2">
@@ -22,5 +24,6 @@ export default function Header() {
 
       </div>
     </header>
+    </>
   );
 }

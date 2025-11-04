@@ -1,5 +1,5 @@
 "use client"
-import { navUrl, socialLinks, otherLinks } from "../../constants/url"
+import { navUrl, socialLinks, otherLinks } from "../../constants/data"
 
 export default function Footer() {
 
