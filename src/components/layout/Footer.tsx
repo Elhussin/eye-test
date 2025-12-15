@@ -62,7 +62,7 @@ export default function Footer() {
 
       {/* Footer bottom */}
       <div className="mt-10 text-center text-xs text-gray-500 dark:text-gray-400">
-        &copy; {new Date().getFullYear()} {"footer"}. All rights reserved.
+        &copy; {new Date().getFullYear()} OSMBeta. All rights reserved.
       </div>
     </footer>
   );

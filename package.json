@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Elhussin.github.io/eye-test",
+  "homepage": "https://eyetest.osmbeta.cloud/",
   "scripts": {
     "dev": "bun run vite",
     "build": "vite build",
